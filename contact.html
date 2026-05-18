@@ -222,18 +222,5 @@
   <a href="tel:+919999999999" class="fab call">📞</a>
 
   <script src="script.js"></script>
-  <script>
-    function handleContact(e) {
-      e.preventDefault();
-      const btn = e.target.querySelector('button[type="submit"]');
-      btn.textContent = '✅ Message Sent!';
-      btn.style.background = '#2d6a4f';
-      setTimeout(() => {
-        btn.textContent = 'Send Message ↗';
-        btn.style.background = '';
-        e.target.reset();
-      }, 3000);
-    }
-  </script>
 </body>
 </html>
