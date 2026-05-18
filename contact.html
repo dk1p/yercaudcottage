@@ -101,52 +101,96 @@
 
       <!-- FORM -->
       <div>
-        <form class="contact-form" onsubmit="handleContact(event)" name="contact" method="POST" data-netlify="true">
-          <div class="form-row">
-            <div>
-              <label class="form-label">First Name</label>
-              <input type="text" placeholder="Arjun" required>
-            </div>
-            <div>
-              <label class="form-label">Last Name</label>
-              <input type="text" placeholder="Krishnamurthy" required>
-            </div>
-          </div>
-          <div>
-            <label class="form-label">Email Address</label>
-            <input type="email" placeholder="arjun@email.com" required>
-          </div>
-          <div>
-            <label class="form-label">Phone Number</label>
-            <input type="tel" placeholder="+91 9999999999">
-          </div>
-          <div>
-            <label class="form-label">Location of Interest</label>
-            <select>
-              <option value="">All Locations</option>
-              <option>Yercaud</option>
-              <option>Kodaikanal</option>
-              <option>Ooty</option>
-              <option>Valparai</option>
-            </select>
-          </div>
-          <div>
-            <label class="form-label">Subject</label>
-            <select>
-              <option>Booking Enquiry</option>
-              <option>Group Booking (10+ guests)</option>
-              <option>Wedding / Event Enquiry</option>
-              <option>Corporate Retreat</option>
-              <option>Special Request</option>
-              <option>General Enquiry</option>
-            </select>
-          </div>
-          <div>
-            <label class="form-label">Message</label>
-            <textarea rows="5" placeholder="Tell us about your ideal stay — dates, number of guests, any special requirements..."></textarea>
-          </div>
-          <button type="submit" class="btn-gold" style="width:100%; justify-content:center; font-size:15px; padding:16px;">Send Message ↗</button>
-        </form>
+        <form class="contact-form"
+      name="contact"
+      method="POST"
+      data-netlify="true"
+      action="/success.html">
+
+  <!-- Required for Netlify -->
+  <input type="hidden" name="form-name" value="contact">
+
+  <div class="form-row">
+    <div>
+      <label class="form-label">First Name</label>
+      <input type="text"
+             name="first_name"
+             placeholder="Arjun"
+             required>
+    </div>
+
+    <div>
+      <label class="form-label">Last Name</label>
+      <input type="text"
+             name="last_name"
+             placeholder="Krishnamurthy"
+             required>
+    </div>
+  </div>
+
+  <div>
+    <label class="form-label">Email Address</label>
+    <input type="email"
+           name="email"
+           placeholder="arjun@email.com"
+           required>
+  </div>
+
+  <div>
+    <label class="form-label">Phone Number</label>
+    <input type="tel"
+           name="phone"
+           placeholder="+91 9999999999">
+  </div>
+
+  <div>
+    <label class="form-label">Location of Interest</label>
+    <select name="location">
+      <option value="">All Locations</option>
+      <option value="Yercaud">Yercaud</option>
+      <option value="Kodaikanal">Kodaikanal</option>
+      <option value="Ooty">Ooty</option>
+      <option value="Valparai">Valparai</option>
+    </select>
+  </div>
+
+  <div>
+    <label class="form-label">Subject</label>
+    <select name="subject">
+      <option value="Booking Enquiry">Booking Enquiry</option>
+      <option value="Group Booking">
+        Group Booking (10+ guests)
+      </option>
+      <option value="Wedding Event">
+        Wedding / Event Enquiry
+      </option>
+      <option value="Corporate Retreat">
+        Corporate Retreat
+      </option>
+      <option value="Special Request">
+        Special Request
+      </option>
+      <option value="General Enquiry">
+        General Enquiry
+      </option>
+    </select>
+  </div>
+
+  <div>
+    <label class="form-label">Message</label>
+    <textarea name="message"
+              rows="5"
+              placeholder="Tell us about your ideal stay — dates, number of guests, any special requirements..."
+              required></textarea>
+  </div>
+
+  <button type="submit"
+          class="btn-gold"
+          style="width:100%; justify-content:center; font-size:15px; padding:16px;">
+    Send Message ↗
+  </button>
+
+</form>
       </div>
     </div>
 
