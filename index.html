@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RENATURE — Luxury Cottage Resort</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <header class="navbar" id="navbar">
+    <div class="nav-logo">RE<span>NATURE</span></div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="locations.html">Locations</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="booking.html" class="nav-cta">Reserve Stay</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeNav">&#10005;</button>
+    <a href="index.html">Home</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="locations.html">Locations</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html" class="mob-cta">Reserve Stay</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-slides">
+      <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1800&q=80')"></div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1800&q=80')"></div>
+      <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=1800&q=80')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">      <h1>Instant online<br><em>booking</em> and total<br>relaxation tomorrow</h1>
+      <p>Glamping with hotel-level service, a separate house and panoramic views.</p>
+      <div class="hero-actions">
+        <a href="booking.html" class="btn-gold">Rent a house ↗</a>
+        <a href="rooms.html" class="btn-ghost">Explore Rooms</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>4.9%</strong><span>Average rating</span></div>
+        <div><strong>94%</strong><span>Repeat guests</span></div>
+        <div><strong>60+</strong><span>Cottages available</span></div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+
+    <div class="slide-dots">
+      <span class="dot active" data-i="0"></span>
+      <span class="dot" data-i="1"></span>
+      <span class="dot" data-i="2"></span>
+    </div>
+  </section>
+
+  <!-- ABOUT STRIP -->
+  <section class="about-strip reveal">
+    <div class="strip-left">
+      <span class="label">01 — About</span>
+      <h2>RENATURE is not<br>just a <em>vacation</em>,<br>it's a reboot.</h2>
+      <p>We have combined the comfort of a boutique hotel and the solitude of nature: separate houses, panoramic views, caring service and an atmosphere where you want to breathe deeper.</p>
+      <a href="about.html" class="link-arrow">Learn more →</a>
+    </div>
+    <div class="strip-center">
+      <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=700&q=80" alt="Cottage interior">
+      <div class="card-badge">
+        <strong>Absolute privacy and space</strong>
+        <span>Just you, nature and comfort — ideal for a reboot or romance</span>
+      </div>
+    </div>
+    <div class="strip-right">
+      <p class="big-quote">"No neighbors, calls or fuss. Just you, nature and complete comfort."</p>
+      <ul class="features-list">
+        <li>✦ Soft bed, hot shower, your own terrace</li>
+        <li>✦ Not just a night — an escape from the city</li>
+        <li>✦ An experience impossible to forget</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- LOCATIONS SECTION -->
+  <section class="locations-section reveal">
+    <div class="loc-header">
+      <span class="label">02 — Locations</span>
+      <h2>Choose your <em>escape</em></h2>
+      <p>Three stunning destinations across Tamil Nadu & Nilgiris</p>
+    </div>
+
+    <div class="locations-grid">
+      <div class="loc-card large">
+        <img src="https://images.unsplash.com/photo-1472120435266-53107fd0c44a?auto=format&fit=crop&w=900&q=80" alt="Yercaud">
+        <div class="loc-overlay">
+          <span class="loc-tag">Hill Station</span>
+          <h3>Yercaud</h3>
+          <p>Salem, Tamil Nadu · 1515m altitude</p>
+          <div class="loc-details">
+            <span>🌿 Coffee Plantations</span>
+            <span>🦋 Shevaroy Hills</span>
+            <span>🌊 Emerald Lake</span>
+          </div>
+          <a href="locations.html#yercaud" class="loc-btn">Explore →</a>
+        </div>
+      </div>
+
+      <div class="loc-card">
+        <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?auto=format&fit=crop&w=700&q=80" alt="Kodaikanal">
+        <div class="loc-overlay">
+          <span class="loc-tag">Princess of Hills</span>
+          <h3>Kodaikanal</h3>
+          <p>Dindigul, Tamil Nadu · 2133m altitude</p>
+          <div class="loc-details">
+            <span>🌺 Neelakurinji</span>
+            <span>🏞 Pine Forests</span>
+          </div>
+          <a href="locations.html#kodaikanal" class="loc-btn">Explore →</a>
+        </div>
+      </div>
+
+      <div class="loc-card">
+        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=700&q=80" alt="Ooty">
+        <div class="loc-overlay">
+          <span class="loc-tag">Queen of Hills</span>
+          <h3>Ooty</h3>
+          <p>Nilgiris, Tamil Nadu · 2240m altitude</p>
+          <div class="loc-details">
+            <span>🍵 Tea Gardens</span>
+            <span>🚂 Toy Train</span>
+          </div>
+          <a href="locations.html#ooty" class="loc-btn">Explore →</a>
+        </div>
+      </div>
+      
+
+      <div class="loc-card">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=700&q=80" alt="Valparai">
+        <div class="loc-overlay">
+          <span class="loc-tag">Hidden Gem</span>
+          <h3>Valparai</h3>
+          <p>Coimbatore, Tamil Nadu · 1500m altitude</p>
+          <div class="loc-details">
+            <span>🐘 Wildlife</span>
+            <span>🌧 Misty Forests</span>
+          </div>
+          <a href="locations.html#valparai" class="loc-btn">Explore →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROOMS SECTION -->
+  <section class="rooms-section reveal">
+    <div class="rooms-header">
+      <span class="label">03 — Rooms</span>
+      <div class="rooms-header-right">
+        <h2>Choose a house that<br><em>speaks to you</em></h2>
+        <div class="booking-quick">
+          <input type="date" placeholder="Check-in">
+          <input type="number" placeholder="Guests" min="1" max="10">
+          <a href="booking.html" class="btn-gold">Choose house</a>
+        </div>
+      </div>
+    </div>
+    <p class="rooms-sub">There are no "typical rooms" here. Each house has its own character, design and holiday scenario.</p>
+
+    <div class="rooms-slider">
+      <div class="room-slide">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=700&q=80" alt="Forest Harmony">
+        <div class="room-info">
+          <h3>Forest Harmony</h3>
+          <p>For a reboot and silence in the embrace of nature.</p>
+          <div class="room-price">₹2800 <span>/night</span></div>
+          <a href="booking.html" class="room-book">Book now</a>
+        </div>
+      </div>
+      <div class="room-slide">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=700&q=80" alt="Panorama Rise">
+        <div class="room-info">
+          <h3>Panorama Rise</h3>
+          <p>For those who want to wake up with a view impossible to forget.</p>
+          <div class="room-price">₹3400 <span>/night</span></div>
+          <a href="booking.html" class="room-book">Book now</a>
+        </div>
+      </div>
+      <div class="room-slide">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=700&q=80" alt="Romantic Bloom">
+        <div class="room-info">
+          <h3>Romantic Bloom</h3>
+          <p>Ideal for dates, proposals or "we just want romance".</p>
+          <div class="room-price">₹3900 <span>/night</span></div>
+          <a href="booking.html" class="room-book">Book now</a>
+        </div>
+      </div>
+      <div class="room-slide">
+        <img src="https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=700&q=80" alt="Wild Soul">
+        <div class="room-info">
+          <h3>Wild Soul</h3>
+          <p>For those who dream of emotions and fire in the literal sense.</p>
+          <div class="room-price">₹3600 <span>/night</span></div>
+          <a href="booking.html" class="room-book">Book now</a>
+        </div>
+      </div>
+      <div class="room-slide">
+        <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=700&q=80" alt="Zen Retreat">
+        <div class="room-info">
+          <h3>Zen Retreat</h3>
+          <p>For peace, self-care and complete digital detox.</p>
+          <div class="room-price">₹3800 <span>/night</span></div>
+          <a href="booking.html" class="room-book">Book now</a>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="s-btn" id="prevRoom">←</button>
+      <button class="s-btn" id="nextRoom">→</button>
+    </div>
+    <div class="text-center mt-2"><a href="rooms.html" class="link-arrow">View all rooms →</a></div>
+  </section>
+
+  <!-- ATMOSPHERE VIDEO / BANNER -->
+  <section class="atmosphere-section reveal">
+    <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=1800&q=80" alt="Atmosphere">
+    <div class="atm-overlay">
+      <span class="label-light">Feel the atmosphere before you arrive</span>
+      <h2>Silence, stars<br>and your own home.</h2>
+      <a href="gallery.html" class="btn-ghost-light">View Gallery →</a>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="amenities-section reveal">
+    <span class="label">04 — Amenities</span>
+    <h2>Everything you <em>need</em></h2>
+    <div class="amen-grid">
+      <div class="amen-item"><div class="amen-icon">📶</div><strong>Free WiFi</strong><p>High-speed internet across all properties</p></div>
+      <div class="amen-item"><div class="amen-icon">🔥</div><strong>Campfire</strong><p>Private campfire area every evening</p></div>
+      <div class="amen-item"><div class="amen-icon">🚗</div><strong>Parking</strong><p>Dedicated secure vehicle parking</p></div>
+      <div class="amen-item"><div class="amen-icon">🍽</div><strong>Restaurant</strong><p>Farm-to-table meals with local flavors</p></div>
+      <div class="amen-item"><div class="amen-icon">☕</div><strong>Coffee Bar</strong><p>Freshly brewed estate coffee daily</p></div>
+      <div class="amen-item"><div class="amen-icon">🛁</div><strong>Hot Springs</strong><p>Private outdoor bathtubs with views</p></div>
+      <div class="amen-item"><div class="amen-icon">🧘</div><strong>Yoga Deck</strong><p>Sunrise yoga sessions with instructor</p></div>
+      <div class="amen-item"><div class="amen-icon">🐾</div><strong>Pet Friendly</strong><p>Bring your furry companions along</p></div>
+    </div>
+  </section>
+
+  <!-- GALLERY PREVIEW -->
+  <section class="gallery-preview reveal">
+    <span class="label">05 — Gallery</span>
+    <h2>Moments from <em>our guests</em></h2>
+    <div class="gallery-masonry">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80" alt="g1" class="g-tall">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="g2">
+      <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=700&q=80" alt="g3">
+      <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=700&q=80" alt="g4" class="g-wide">
+      <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=700&q=80" alt="g5">
+      <img src="https://images.unsplash.com/photo-1472214103451-9374bd1c798e?auto=format&fit=crop&w=700&q=80" alt="g6">
+    </div>
+    <div class="text-center mt-2"><a href="gallery.html" class="link-arrow">View full gallery →</a></div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section reveal">
+    <span class="label">06 — Reviews</span>
+    <h2>What our guests <em>say</em></h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Best cottage stay experience. Very peaceful and completely away from city stress. We'll be back every season."</p>
+        <div class="testi-author"><img src="https://i.pravatar.cc/50?img=1" alt=""><span>Dinesh K. — Yercaud</span></div>
+      </div>
+      <div class="testi-card featured">
+        <div class="stars">★★★★★</div>
+        <p>"The Forest Harmony cottage was exactly what our family needed. Kids loved the campfire, we loved the silence."</p>
+        <div class="testi-author"><img src="https://i.pravatar.cc/50?img=5" alt=""><span>Priya & Arjun — Kodaikanal</span></div>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p>"Proposed to my girlfriend here under the stars. The staff arranged everything perfectly. Magical."</p>
+        <div class="testi-author"><img src="https://i.pravatar.cc/50?img=3" alt=""><span>Rahul M. — Ooty</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq-section reveal">
+    <span class="label">07 — FAQ</span>
+    <h2>Common <em>questions</em></h2>
+    <div class="faq-grid">
+      <details class="faq-item">
+        <summary>Is parking available at all locations?</summary>
+        <p>Yes, complimentary secure parking is available at all three locations — Yercaud, Kodaikanal, and Ooty.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Do you allow campfires at the cottages?</summary>
+        <p>Absolutely. Each cottage includes a private campfire area. Firewood is provided and staff will help you light it safely.</p>
+      </details>
+      <details class="faq-item">
+        <summary>What is the check-in and check-out time?</summary>
+        <p>Check-in is from 2:00 PM and check-out is by 11:00 AM. Early check-in or late check-out can be arranged on request.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Are pets allowed?</summary>
+        <p>Yes! We are a pet-friendly resort. Please inform us in advance so we can prepare accordingly.</p>
+      </details>
+      <details class="faq-item">
+        <summary>Is there a restaurant on-site?</summary>
+        <p>Yes, we have a farm-to-table restaurant serving local Tamil Nadu cuisine and continental dishes.</p>
+      </details>
+      <details class="faq-item">
+        <summary>How do I make a reservation?</summary>
+        <p>You can book through our website's booking page, call us at +91 9999999999, or WhatsApp us directly.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CTA BOOKING BANNER -->
+  <section class="cta-banner reveal">
+    <img src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?auto=format&fit=crop&w=1800&q=80" alt="CTA">
+    <div class="cta-overlay">
+      <h2>Your nature escape<br><em>starts here</em></h2>
+      <p>A separate house, panoramic views and the attention of a host — ready for your next vacation.</p>
+      <a href="booking.html" class="btn-gold">Book Now ↗</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">RE<span>NATURE</span></div>
+        <p>Luxury cottage stays across Tamil Nadu's finest hill stations. Escape the city. Breathe deeper.</p>
+        <div class="socials">
+          <a href="#">📸</a>
+          <a href="#">💬</a>
+          <a href="#">🐦</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="rooms.html">Our Rooms</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="locations.html">Locations</a>
+        <a href="about.html">About Us</a>
+      </div>
+      <div class="footer-col">
+        <h4>Locations</h4>
+        <a href="locations.html#yercaud">Yercaud</a>
+        <a href="locations.html#kodaikanal">Kodaikanal</a>
+        <a href="locations.html#ooty">Ooty</a>
+        <a href="locations.html#valparai">Valparai</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>📞 +91 9999999999</p>
+        <p>✉ info@renature.in</p>
+        <p>📍 Yercaud, Tamil Nadu</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 RENATURE. All rights reserved.</p>
+      <div><a href="#">Privacy</a> · <a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <!-- Floating Buttons -->
+  <a href="https://wa.me/919999999999" class="fab whatsapp" title="WhatsApp">💬</a>
+  <a href="tel:+919999999999" class="fab call" title="Call">📞</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

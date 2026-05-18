@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Your Stay — RENATURE Luxury Cottage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar scrolled" id="navbar">
+    <div class="nav-logo">RE<span>NATURE</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="gallery.html">Gallery</a>
+      <a href="locations.html">Locations</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    </nav>
+    <a href="booking.html" class="nav-cta">Reserve Stay</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeNav">&#10005;</button>
+    <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="gallery.html">Gallery</a>
+    <a href="locations.html">Locations</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    <a href="booking.html" class="mob-cta">Reserve Stay</a>
+  </div>
+
+  <div class="booking-page" style="padding-top: 120px;">
+    <div style="margin-bottom: 60px;">
+      <span class="label">Step 1 of 1</span>
+      <h1 style="font-family:var(--font-display); font-size:clamp(2rem,4vw,3.5rem); font-weight:300;">Reserve your <em style="font-style:italic; color:var(--gold)">perfect stay</em></h1>
+      <p style="color:var(--muted); margin-top:12px;">Fill in the details below and our team will confirm your booking within 2 hours.</p>
+    </div>
+
+    <div class="booking-grid">
+      <!-- FORM -->
+      <div class="booking-form-section">
+        <form class="booking-form" onsubmit="handleBooking(event)">
+
+          <div>
+            <label class="form-label">Full Name</label>
+            <input type="text" placeholder="Your full name" required>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label class="form-label">Phone Number</label>
+              <input type="tel" placeholder="+91 9999999999" required>
+            </div>
+            <div>
+              <label class="form-label">Email Address</label>
+              <input type="email" placeholder="you@email.com">
+            </div>
+          </div>
+
+          <div>
+            <label class="form-label">Select Location</label>
+            <select>
+              <option value="">Choose a location</option>
+              <option>Yercaud</option>
+              <option>Kodaikanal</option>
+              <option>Ooty</option>
+              <option>Valparai</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="form-label">Select Room</label>
+            <select id="roomSelect">
+              <option value="">Choose a room</option>
+              <option>Forest Harmony — ₹2,800/night</option>
+              <option>Panorama Rise — ₹3,400/night</option>
+              <option>Romantic Bloom — ₹3,900/night</option>
+              <option>Wild Soul — ₹3,600/night</option>
+              <option>Zen Retreat — ₹3,800/night</option>
+              <option>Family Villa — ₹4,500/night</option>
+              <option>Luxury Suite — ₹6,500/night</option>
+              <option>Treehouse Escape — ₹5,200/night</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label class="form-label">Check-in Date</label>
+              <input type="date" id="checkin" required>
+            </div>
+            <div>
+              <label class="form-label">Check-out Date</label>
+              <input type="date" id="checkout" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div>
+              <label class="form-label">Number of Guests</label>
+              <input type="number" placeholder="2" min="1" max="20">
+            </div>
+            <div>
+              <label class="form-label">Number of Children</label>
+              <input type="number" placeholder="0" min="0" max="10">
+            </div>
+          </div>
+
+          <div>
+            <label class="form-label">Special Requests</label>
+            <select>
+              <option value="">None</option>
+              <option>Early Check-in (subject to availability)</option>
+              <option>Late Check-out (subject to availability)</option>
+              <option>Couple Decoration (flowers, candles)</option>
+              <option>Birthday Celebration</option>
+              <option>Anniversary Package</option>
+              <option>Campfire Setup</option>
+              <option>Airport Pickup</option>
+              <option>Pet Accommodation</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="form-label">Additional Notes</label>
+            <input type="text" placeholder="Anything else we should know?">
+          </div>
+
+          <button type="submit" class="btn-gold" style="width:100%; justify-content:center; font-size:16px; padding:18px 32px;">
+            Confirm Booking Request ↗
+          </button>
+
+          <p style="font-size:12px; color:var(--muted); text-align:center; margin-top:8px;">
+            No payment required now. Our team will call to confirm and process payment.
+          </p>
+        </form>
+      </div>
+
+      <!-- SUMMARY -->
+      <div class="booking-summary">
+        <div class="summary-card">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=700&q=80" alt="Room" id="summaryImg">
+          <div class="summary-body">
+            <h3>Booking Summary</h3>
+            <div class="summary-row">
+              <span>Room</span>
+              <strong id="summaryRoom">Select a room</strong>
+            </div>
+            <div class="summary-row">
+              <span>Price</span>
+              <strong id="summaryPrice">—</strong>
+            </div>
+            <div class="summary-row">
+              <span>Check-in</span>
+              <strong id="summaryCheckin">—</strong>
+            </div>
+            <div class="summary-row">
+              <span>Check-out</span>
+              <strong id="summaryCheckout">—</strong>
+            </div>
+            <div class="summary-row">
+              <span>Duration</span>
+              <strong id="summaryNights">—</strong>
+            </div>
+            <div class="summary-total">
+              <span>Estimated Total</span>
+              <strong id="summaryTotal">—</strong>
+            </div>
+
+            <div style="margin-top:20px; background:rgba(201,168,76,0.08); border:1px solid rgba(201,168,76,0.2); border-radius:12px; padding:16px;">
+              <p style="font-size:12px; color:var(--muted); line-height:1.7;">✅ Free cancellation up to 7 days before arrival<br>📅 Free date changes up to 72 hours before arrival<br>📞 Confirmation call within 2 hours</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- QUICK CONTACT -->
+        <div style="margin-top:20px; background:var(--dark3); border-radius:var(--radius); padding:24px; border:1px solid rgba(255,255,255,0.06);">
+          <p style="font-size:13px; color:var(--muted); margin-bottom:16px;">Prefer to book by phone?</p>
+          <a href="tel:+919999999999" class="btn-ghost" style="width:100%; justify-content:center; display:flex;">📞 Call +91 9999999999</a>
+          <a href="https://wa.me/919999999999" style="display:flex; align-items:center; justify-content:center; gap:8px; margin-top:12px; background:#25D366; color:white; padding:14px 32px; border-radius:50px; font-size:14px; font-weight:500; transition:opacity 0.3s;">💬 WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" style="margin-top:80px;">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="nav-logo">RE<span>NATURE</span></div><p>Luxury cottage stays across Tamil Nadu's finest hill stations.</p><div class="socials"><a href="#">📸</a><a href="#">💬</a><a href="#">🐦</a></div></div>
+      <div class="footer-col"><h4>Explore</h4><a href="rooms.html">Our Rooms</a><a href="gallery.html">Gallery</a><a href="locations.html">Locations</a><a href="about.html">About Us</a></div>
+      <div class="footer-col"><h4>Locations</h4><a href="locations.html#yercaud">Yercaud</a><a href="locations.html#kodaikanal">Kodaikanal</a><a href="locations.html#ooty">Ooty</a><a href="locations.html#valparai">Valparai</a></div>
+      <div class="footer-col"><h4>Contact</h4><p>📞 +91 9999999999</p><p>✉ info@renature.in</p><p>📍 Yercaud, Tamil Nadu</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 RENATURE. All rights reserved.</p><div><a href="#">Privacy</a> · <a href="#">Terms</a></div></div>
+  </footer>
+
+  <a href="https://wa.me/919999999999" class="fab whatsapp">💬</a>
+  <a href="tel:+919999999999" class="fab call">📞</a>
+
+  <script src="script.js"></script>
+  <script>
+    // Live summary update
+    const priceMap = {
+      'Forest Harmony — ₹2,800/night': { price: 2800, name: 'Forest Harmony' },
+      'Panorama Rise — ₹3,400/night': { price: 3400, name: 'Panorama Rise' },
+      'Romantic Bloom — ₹3,900/night': { price: 3900, name: 'Romantic Bloom' },
+      'Wild Soul — ₹3,600/night': { price: 3600, name: 'Wild Soul' },
+      'Zen Retreat — ₹3,800/night': { price: 3800, name: 'Zen Retreat' },
+      'Family Villa — ₹4,500/night': { price: 4500, name: 'Family Villa' },
+      'Luxury Suite — ₹6,500/night': { price: 6500, name: 'Luxury Suite' },
+      'Treehouse Escape — ₹5,200/night': { price: 5200, name: 'Treehouse Escape' },
+    };
+
+    function update() {
+      const rs = document.getElementById('roomSelect');
+      const ci = document.getElementById('checkin');
+      const co = document.getElementById('checkout');
+      const sel = priceMap[rs?.value];
+
+      if (sel) {
+        document.getElementById('summaryRoom').textContent = sel.name;
+        document.getElementById('summaryPrice').textContent = `₹${sel.price.toLocaleString()}/night`;
+      }
+      if (ci?.value) {
+        document.getElementById('summaryCheckin').textContent = new Date(ci.value).toLocaleDateString('en-IN', {day:'numeric', month:'short', year:'numeric'});
+      }
+      if (co?.value) {
+        document.getElementById('summaryCheckout').textContent = new Date(co.value).toLocaleDateString('en-IN', {day:'numeric', month:'short', year:'numeric'});
+      }
+      if (ci?.value && co?.value && sel) {
+        const nights = Math.max(1, Math.round((new Date(co.value) - new Date(ci.value)) / 86400000));
+        document.getElementById('summaryNights').textContent = `${nights} night${nights > 1 ? 's' : ''}`;
+        document.getElementById('summaryTotal').textContent = `₹${(sel.price * nights).toLocaleString()}`;
+      }
+    }
+
+    document.getElementById('roomSelect')?.addEventListener('change', update);
+    document.getElementById('checkin')?.addEventListener('change', update);
+    document.getElementById('checkout')?.addEventListener('change', update);
+
+    function handleBooking(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = '✅ Booking Confirmed! We\'ll call you soon.';
+      btn.style.background = '#2d6a4f';
+      setTimeout(() => {
+        btn.textContent = 'Confirm Booking Request ↗';
+        btn.style.background = '';
+        e.target.reset();
+        document.getElementById('summaryRoom').textContent = 'Select a room';
+        document.getElementById('summaryPrice').textContent = '—';
+        document.getElementById('summaryCheckin').textContent = '—';
+        document.getElementById('summaryCheckout').textContent = '—';
+        document.getElementById('summaryNights').textContent = '—';
+        document.getElementById('summaryTotal').textContent = '—';
+      }, 4000);
+    }
+  </script>
+</body>
+</html>

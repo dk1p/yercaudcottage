@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — RENATURE Luxury Cottage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-logo">RE<span>NATURE</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="gallery.html">Gallery</a>
+      <a href="locations.html">Locations</a><a href="about.html">About</a><a href="contact.html" class="active">Contact</a>
+    </nav>
+    <a href="booking.html" class="nav-cta">Reserve Stay</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeNav">&#10005;</button>
+    <a href="index.html">Home</a><a href="rooms.html">Rooms</a><a href="gallery.html">Gallery</a>
+    <a href="locations.html">Locations</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+    <a href="booking.html" class="mob-cta">Reserve Stay</a>
+  </div>
+
+  <div class="page-hero">
+    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80" alt="Contact">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="label">Get In Touch</span>
+      <h1>We'd love to <em>hear</em> from you</h1>
+      <p>Our concierge team typically responds within 2 hours.</p>
+    </div>
+  </div>
+
+  <div class="contact-page">
+    <div class="contact-grid reveal">
+      <!-- INFO -->
+      <div class="contact-info">
+        <h2>Let's plan your<br><em>perfect</em> stay</h2>
+        <p>Whether you have a question about a room, want a personalised recommendation, or need to arrange something special — we're here.</p>
+
+        <div class="contact-detail">
+          <div class="c-icon">📞</div>
+          <div class="c-text">
+            <strong>Phone / WhatsApp</strong>
+            <span>+91 9999999999</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="c-icon">✉</div>
+          <div class="c-text">
+            <strong>Email</strong>
+            <span>info@renature.in</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="c-icon">📍</div>
+          <div class="c-text">
+            <strong>Head Office</strong>
+            <span>12, Shevaroy Hills Road, Yercaud, Salem District, Tamil Nadu 636601</span>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="c-icon">🕐</div>
+          <div class="c-text">
+            <strong>Office Hours</strong>
+            <span>Monday – Sunday: 8:00 AM – 9:00 PM IST</span>
+          </div>
+        </div>
+
+        <div style="margin-top:40px;">
+          <h4 style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--gold); margin-bottom:16px;">Our Locations</h4>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+            <div style="background:var(--dark3); border-radius:12px; padding:16px; font-size:13px;">
+              <strong style="color:var(--white)">Yercaud</strong><br>
+              <span style="color:var(--muted)">+91 9999999991</span>
+            </div>
+            <div style="background:var(--dark3); border-radius:12px; padding:16px; font-size:13px;">
+              <strong style="color:var(--white)">Kodaikanal</strong><br>
+              <span style="color:var(--muted)">+91 9999999992</span>
+            </div>
+            <div style="background:var(--dark3); border-radius:12px; padding:16px; font-size:13px;">
+              <strong style="color:var(--white)">Ooty</strong><br>
+              <span style="color:var(--muted)">+91 9999999993</span>
+            </div>
+            <div style="background:var(--dark3); border-radius:12px; padding:16px; font-size:13px;">
+              <strong style="color:var(--white)">Valparai</strong><br>
+              <span style="color:var(--muted)">+91 9999999994</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORM -->
+      <div>
+        <form class="contact-form" onsubmit="handleContact(event)">
+          <div class="form-row">
+            <div>
+              <label class="form-label">First Name</label>
+              <input type="text" placeholder="Arjun" required>
+            </div>
+            <div>
+              <label class="form-label">Last Name</label>
+              <input type="text" placeholder="Krishnamurthy" required>
+            </div>
+          </div>
+          <div>
+            <label class="form-label">Email Address</label>
+            <input type="email" placeholder="arjun@email.com" required>
+          </div>
+          <div>
+            <label class="form-label">Phone Number</label>
+            <input type="tel" placeholder="+91 9999999999">
+          </div>
+          <div>
+            <label class="form-label">Location of Interest</label>
+            <select>
+              <option value="">All Locations</option>
+              <option>Yercaud</option>
+              <option>Kodaikanal</option>
+              <option>Ooty</option>
+              <option>Valparai</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Subject</label>
+            <select>
+              <option>Booking Enquiry</option>
+              <option>Group Booking (10+ guests)</option>
+              <option>Wedding / Event Enquiry</option>
+              <option>Corporate Retreat</option>
+              <option>Special Request</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div>
+            <label class="form-label">Message</label>
+            <textarea rows="5" placeholder="Tell us about your ideal stay — dates, number of guests, any special requirements..."></textarea>
+          </div>
+          <button type="submit" class="btn-gold" style="width:100%; justify-content:center; font-size:15px; padding:16px;">Send Message ↗</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- MAP PLACEHOLDER -->
+    <div class="reveal" style="margin-top:80px;">
+      <span class="label">Find Us</span>
+      <h2>Visit us in <em>person</em></h2>
+      <div style="background:var(--dark3); border-radius:var(--radius); overflow:hidden; margin-top:32px; height:400px; display:flex; align-items:center; justify-content:center; border: 1px solid rgba(255,255,255,0.06);">
+        <div style="text-align:center; color:var(--muted);">
+          <div style="font-size:48px; margin-bottom:16px;">🗺</div>
+          <p style="font-size:14px;">Yercaud, Salem District, Tamil Nadu</p>
+          <a href="https://maps.google.com/?q=Yercaud+Tamil+Nadu" target="_blank" style="color:var(--gold); font-size:13px; display:inline-block; margin-top:12px;">Open in Google Maps →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="nav-logo">RE<span>NATURE</span></div><p>Luxury cottage stays across Tamil Nadu's finest hill stations.</p><div class="socials"><a href="#">📸</a><a href="#">💬</a><a href="#">🐦</a></div></div>
+      <div class="footer-col"><h4>Explore</h4><a href="rooms.html">Our Rooms</a><a href="gallery.html">Gallery</a><a href="locations.html">Locations</a><a href="about.html">About Us</a></div>
+      <div class="footer-col"><h4>Locations</h4><a href="locations.html#yercaud">Yercaud</a><a href="locations.html#kodaikanal">Kodaikanal</a><a href="locations.html#ooty">Ooty</a><a href="locations.html#valparai">Valparai</a></div>
+      <div class="footer-col"><h4>Contact</h4><p>📞 +91 9999999999</p><p>✉ info@renature.in</p><p>📍 Yercaud, Tamil Nadu</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 RENATURE. All rights reserved.</p><div><a href="#">Privacy</a> · <a href="#">Terms</a></div></div>
+  </footer>
+
+  <a href="https://wa.me/919999999999" class="fab whatsapp">💬</a>
+  <a href="tel:+919999999999" class="fab call">📞</a>
+
+  <script src="script.js"></script>
+  <script>
+    function handleContact(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = '✅ Message Sent!';
+      btn.style.background = '#2d6a4f';
+      setTimeout(() => {
+        btn.textContent = 'Send Message ↗';
+        btn.style.background = '';
+        e.target.reset();
+      }, 3000);
+    }
+  </script>
+</body>
+</html>

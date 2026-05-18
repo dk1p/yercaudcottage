@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rooms — RENATURE Luxury Cottage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <div class="nav-logo">RE<span>NATURE</span></div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="rooms.html" class="active">Rooms</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="locations.html">Locations</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="booking.html" class="nav-cta">Reserve Stay</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav">
+    <button class="close-btn" id="closeNav">&#10005;</button>
+    <a href="index.html">Home</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="locations.html">Locations</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="booking.html" class="mob-cta">Reserve Stay</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1800&q=80" alt="Rooms">
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <span class="label">Our Rooms</span>
+      <h1>Houses that <em>speak</em> to you</h1>
+      <p>Every cottage is unique — each with its own character, design and holiday scenario.</p>
+    </div>
+  </div>
+
+  <!-- ROOMS PAGE CONTENT -->
+  <div class="rooms-page">
+    <div class="rooms-filter">
+      <button class="filter-btn active">All Rooms</button>
+      <button class="filter-btn">Deluxe</button>
+      <button class="filter-btn">Family</button>
+      <button class="filter-btn">Couple</button>
+      <button class="filter-btn">Group</button>
+      <button class="filter-btn">Pet Friendly</button>
+    </div>
+
+    <div class="rooms-full-grid">
+
+      <div class="room-card-full reveal">
+        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=800&q=80" alt="Forest Harmony">
+        <div class="card-body">
+          <span class="location-tag">Yercaud · Kodaikanal · Ooty</span>
+          <h3>Forest Harmony</h3>
+          <p>For a reboot and silence in the embrace of nature. Surrounded by pine trees with a private deck facing the valley.</p>
+          <div class="card-features">
+            <span>🌲 Forest View</span>
+            <span>🔥 Campfire</span>
+            <span>📶 WiFi</span>
+            <span>🚿 Hot Shower</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">₹2,800 <small>/night</small></div>
+            <a href="booking.html" class="btn-gold">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card-full reveal">
+        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80" alt="Panorama Rise">
+        <div class="card-body">
+          <span class="location-tag">Ooty · Kodaikanal</span>
+          <h3>Panorama Rise</h3>
+          <p>For those who want to wake up with a panoramic view that is impossible to forget. Sunrise from the bed.</p>
+          <div class="card-features">
+            <span>🌄 Panoramic View</span>
+            <span>🛁 Outdoor Tub</span>
+            <span>☕ Coffee Bar</span>
+            <span>📺 Smart TV</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">₹3,400 <small>/night</small></div>
+            <a href="booking.html" class="btn-gold">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card-full reveal">
+        <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80" alt="Romantic Bloom">
+        <div class="card-body">
+          <span class="location-tag">Yercaud · Ooty</span>
+          <h3>Romantic Bloom</h3>
+          <p>Ideal for couples, dates, proposals or "we just want romance". Decorated with flowers on request.</p>
+          <div class="card-features">
+            <span>🌺 Garden View</span>
+            <span>🕯 Candlelight</span>
+            <span>🛁 Jacuzzi</span>
+            <span>🍾 Welcome Kit</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">₹3,900 <small>/night</small></div>
+            <a href="booking.html" class="btn-gold">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card-full reveal">
+        <img src="https://images.unsplash.com/photo-1464146072230-91cabc968266?auto=format&fit=crop&w=800&q=80" alt="Wild Soul">
+        <div class="card-body">
+          <span class="location-tag">Valparai · Kodaikanal</span>
+          <h3>Wild Soul</h3>
+          <p>For those who dream of emotions and fire in the literal sense. Raw nature, wildlife sounds, open-air dining.</p>
+          <div class="card-features">
+            <span>🦁 Wildlife Zone</span>
+            <span>🔥 Firepit</span>
+            <span>🌿 Herbal Garden</span>
+            <span>🐾 Pet Friendly</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">₹3,600 <small>/night</small></div>
+            <a href="booking.html" class="btn-gold">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card-full reveal">
+        <img src="https://images.unsplash.com/photo-1516455590571-18256e5bb9ff?auto=format&fit=crop&w=800&q=80" alt="Zen Retreat">
+        <div class="card-body">
+          <span class="location-tag">Ooty · Yercaud</span>
+          <h3>Zen Retreat</h3>
+          <p>For peace, self-care and complete digital detox. Yoga deck, meditation garden, no TV policy.</p>
+          <div class="card-features">
+            <span>🧘 Yoga Deck</span>
+            <span>🌿 Meditation Garden</span>
+            <span>🍵 Herbal Tea</span>
+            <span>📵 Digital Detox</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">₹3,800 <small>/night</small></div>
+            <a href="booking.html" class="btn-gold">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card-full reveal">
+        <img src="https://images.unsplash.com/photo-1540518614846-7eded433c457?auto=format&fit=crop&w=800&q=80" alt="Family Villa">
+        <div class="card-body">
+          <span class="location-tag">All Locations</span>
+          <h3>Family Villa</h3>
+          <p>Spacious 3-bedroom villa with private kitchen, garden and dedicated play area for children.</p>
+          <div class="card-features">
+            <span>🏡 3 Bedrooms</span>
+            <span>🍳 Private Kitchen</span>
+            <span>🚗 Parking</span>
+            <span>👶 Kids Area</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">₹4,500 <small>/night</small></div>
+            <a href="booking.html" class="btn-gold">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card-full reveal">
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80" alt="Luxury Suite">
+        <div class="card-body">
+          <span class="location-tag">Ooty · Kodaikanal</span>
+          <h3>Luxury Suite</h3>
+          <p>The pinnacle of our collection. Butler service, private chef on call, infinity pool access and helicopter pad.</p>
+          <div class="card-features">
+            <span>🛎 Butler Service</span>
+            <span>♾ Infinity Pool</span>
+            <span>🍽 Private Chef</span>
+            <span>🚁 Helipad Access</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">₹6,500 <small>/night</small></div>
+            <a href="booking.html" class="btn-gold">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="room-card-full reveal">
+        <img src="https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?auto=format&fit=crop&w=800&q=80" alt="Treehouse Escape">
+        <div class="card-body">
+          <span class="location-tag">Valparai · Yercaud</span>
+          <h3>Treehouse Escape</h3>
+          <p>Elevated 8 feet above ground among century-old trees. Rope bridge entry, glass floor panels, stargazing dome.</p>
+          <div class="card-features">
+            <span>🌳 Treehouse</span>
+            <span>🔭 Stargazing</span>
+            <span>🌉 Rope Bridge</span>
+            <span>🦅 Bird Watching</span>
+          </div>
+          <div class="card-footer">
+            <div class="card-price">₹5,200 <small>/night</small></div>
+            <a href="booking.html" class="btn-gold">Book Now</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner reveal">
+    <img src="https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=1800&q=80" alt="CTA">
+    <div class="cta-overlay">
+      <h2>Still deciding?<br><em>Call us</em> for a virtual tour</h2>
+      <p>Our concierge team will help you choose the perfect house for your holiday.</p>
+      <a href="tel:+919999999999" class="btn-gold">📞 +91 9999999999</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">RE<span>NATURE</span></div>
+        <p>Luxury cottage stays across Tamil Nadu's finest hill stations.</p>
+        <div class="socials"><a href="#">📸</a><a href="#">💬</a><a href="#">🐦</a></div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><a href="rooms.html">Our Rooms</a><a href="gallery.html">Gallery</a><a href="locations.html">Locations</a><a href="about.html">About Us</a></div>
+      <div class="footer-col"><h4>Locations</h4><a href="locations.html#yercaud">Yercaud</a><a href="locations.html#kodaikanal">Kodaikanal</a><a href="locations.html#ooty">Ooty</a><a href="locations.html#valparai">Valparai</a></div>
+      <div class="footer-col"><h4>Contact</h4><p>📞 +91 9999999999</p><p>✉ info@renature.in</p><p>📍 Yercaud, Tamil Nadu</p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 RENATURE. All rights reserved.</p><div><a href="#">Privacy</a> · <a href="#">Terms</a></div></div>
+  </footer>
+
+  <a href="https://wa.me/919999999999" class="fab whatsapp">💬</a>
+  <a href="tel:+919999999999" class="fab call">📞</a>
+  <script src="script.js"></script>
+</body>
+</html>
